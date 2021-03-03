@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root versionMajor="1" versionMinor="6">
+  <kernel name="krnl_rtl_trial_a" language="ip_c" vlnv="nus.edu.sg:kernel:krnl_rtl_trial_a:1.0" attributes="" preferredWorkGroupSizeMultiple="0" workGroupSize="1" interrupt="false" hwControlProtocol="ap_ctrl_none">
+    <ports>
+      <port name="s_axi_control" mode="slave" range="0x1000" dataWidth="32" portType="addressable" base="0x0"/>
+      <port name="s_din" mode="write_only" dataWidth="64" portType="stream"/>
+      <port name="m_dout" mode="read_only" dataWidth="64" portType="stream"/>
+    </ports>
+    <args>
+      <arg name="s_din" addressQualifier="4" id="0" port="s_din" size="0x4" offset="0x010" hostOffset="0x0" hostSize="0x4" type="stream&lt;qdma_axis&lt;64,0,0,0>>&amp;" />
+      <arg name="m_dout" addressQualifier="4" id="1" port="m_dout" size="0x4" offset="0x018" hostOffset="0x0" hostSize="0x4" type="stream&lt;qdma_axis&lt;64,0,0,0>>&amp;" />
+    </args>
+  </kernel>
+</root>
+

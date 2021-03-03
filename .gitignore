@@ -1,0 +1,6 @@
+*.log
+*.jou
+.Xil/
+.hbs/
+*.xo
+*_packprj/
